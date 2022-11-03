@@ -21,10 +21,6 @@ def test_route():
     return {"this is the" : "another route"}
 
 
-@app.get("/create-user" , description="Creating a new user record")
-def create_user()
-
-
 @app.on_event("startup")
 async def startup():
     if not database.is_connected:
